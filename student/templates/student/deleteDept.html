@@ -1,0 +1,9 @@
+<h1>Delete Department</h1>
+
+<form method="post">
+	{% csrf_token %}
+	
+	<p> Are you sure to delete <b>{{obj.department_name}}</b></p>
+
+	<input type="submit" value="delete" name="">
+</form>

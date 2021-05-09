@@ -1,0 +1,12 @@
+<h2>Department</h2>
+
+<form method="get">
+	{% for item in departments %}
+	<table>
+		<tr>
+			<td>{{item.department_name}}</td>
+		</tr>
+	</table>
+
+	{% endfor %}
+</form>
