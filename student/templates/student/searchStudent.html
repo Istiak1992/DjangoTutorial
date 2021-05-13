@@ -1,0 +1,36 @@
+
+<h1 align="center">Search Student Info</h1>
+
+<form method="get">
+
+	{{filters.form}}
+
+	<input type="submit" value="Search" name="">
+
+</form>
+
+<hr>
+
+<form method="get">
+
+<table border="1" align="center">
+	<tr>
+		<th>Student Name</th>
+		<th>ID</th>
+		<th>Department</th>
+		<th>Age</th>
+		<th>CGPA</th>
+	</tr>
+{% for item in filters.qs %}
+	<tr>
+		<td>{{item.student_name}}</td>
+		<td>{{item.id_no}}</td>
+		<td>{{item.department}}</td>
+		<td>{{item.Age}}</td>
+		<td>{{item.CGPA}}</td>
+	</tr>
+
+{% endfor %}
+</table> 
+
+</form>
